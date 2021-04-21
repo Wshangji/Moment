@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--响应式布局-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--添加标签页logo-->
+    <link rel="Shortcut Icon" href="favicon.ico"  />
+    <!-- Bootstrap icon库-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <!-- Bootstrap css-->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- 自定义 css-->
+    <link href="css/home.css" rel="stylesheet">
+
+    <!--自定义js-->
+    <script src="js/home.js"></script>
+    <!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.min.js"></script>
+    <!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
+    <script src="js/bootstrap.min.js"></script>
+    <title>Moment-即刻</title>
+</head>
+<body>
+<!--导航栏-->
+<header>
+    <div class="container">
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+            <a href="#" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+                <svg t="1618889473028" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="19992" width="3rem"><path d="M102.4 238.92992v614.4L375.47008 921.6V307.2L102.4 238.92992zM426.67008 661.32992L648.52992 716.8 426.67008 384zM699.40224 729.52832L921.6 785.05984V285.1328zM674.89792 664.064L921.6 170.65984 648.52992 102.4 499.37408 400.73216z" p-id="19993" fill="#0D6EFD"></path></svg>
+            </a>
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="#" class="nav-link px-2 link-secondary">Moment-即刻</a></li>
+                <li><a href="#" class="nav-link px-2 link-dark">推荐</a></li>
+                <li><a href="#" class="nav-link px-2 link-dark">短文学</a></li>
+                <li><a href="#" class="nav-link px-2 link-dark">长文学</a></li>
+                <li><a id="about" href="" class="nav-link px-2 link-dark">关于</a></li>
+            </ul>
+
+            <!--登录与注册-->
+            <div class="col-md-3 text-end">
+                <button type="button" class="btn btn-outline-primary me-2">Login</button>
+                <button type="button" class="btn btn-primary">Sign-up</button>
+            </div>
+        </header>
+    </div>
+</header>
+
+<main>
+    <!--首页图片轮播 -->
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="img-fluid" src="images/home1.svg" height="100%">
+                <div class="container">
+                    <div class="carousel-caption text-start" style="color: #0D6EFD">
+                        <h1>人人天生就是作家</h1>
+                        <p>每个人都有一个死角，自己走不出来，别人也闯不进去。我把最深沉的秘密放在那里。你不懂我，我不怪你</p>
+                        <p><a class="btn btn-lg btn-primary" href="#">立即注册</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="img-fluid" src="images/home2.svg" height="100%">
+                <div class="container">
+                    <div class="carousel-caption" style="color: #0d6efd">
+                        <h1>你不是真正的快乐</h1>
+                        <p>喝着孤独的酒，吹着自由的风，等一个没有归期的人，在余生里做着只有自己的梦</p>
+                        <p><a class="btn btn-lg btn-primary" href="#">即刻推荐</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="img-fluid" src="images/home3.svg" height="100%">
+                <div class="container">
+                    <div class="carousel-caption text-end" style="color: #0D6EFD">
+                        <h1>我们都曾做梦过</h1>
+                        <p>一个人的生活就像童话，只是没有王子，我也不是公主</p>
+                        <p><a class="btn btn-lg btn-primary" href="#">了解更多</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container marketing">
+
+        <!-- 简介 -->
+        <div class="row">
+            <h1>What is Moment</h1>
+            <p class="fs-5 col-md-8">Moment 在英文中是瞬间的意思，但我更愿意称之为即刻，一瞬间有千万百万种可能，我们都曾有过停留在某一瞬间的想法，但时光总是匆匆而逝</p>
+            <p class="fs-6 col-md-8">但是文字可以停留，可以承载着你的，喜、怒、哀、乐、愁。在这里，用文字留下你即刻的情感，在别人的即刻中寻找共鸣。要期待，许多生命中还未发生的幸福，总有一天会与你不期而遇</p>
+            <h4>Moment-即刻，只为做极简文字共鸣</h4>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">一字一句|<span class="text-muted">你从陌生走来又走向陌生</span></h2>
+                <p class="lead">我喜欢我的懦弱，痛苦和难堪也喜欢。<br>
+                    喜欢夏天的光照，风的气息，蝉的鸣叫，<br>
+                    喜欢这些，喜欢得不得了。<br>
+                    ——村上春树
+                </p>
+            </div>
+            <div class="col-md-5">
+                <img class="img-fluid" src="images/cunshang.webp">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">世界很残酷| <span class="text-muted">活得有温度</span></h2>
+                <p class="lead">世界如一个山坡，只要你没有站在顶点，就永远有人比你高，当你仰望久了，要适时向下看看，我们都是平凡人，不必有太多的卑微</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="img-fluid img-thumbnail" src="images/fonterdw.webp">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">不期而遇| <span class="text-muted">需要时间</span></h2>
+                <p class="lead">
+                    人一旦走了隔阂就很难再走进<br>
+                    而且你没理解我的瞬间<br>
+                    我从未怪过你<br>
+                    因为你可以一直长不大<br>
+                    但我不能一直没有安全感<br>
+                </p>
+            </div>
+            <div class="col-md-5">
+                <img class="img-fluid img-thumbnail" src="images/dongye.webp">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+    </div><!-- /.container -->
+
+</main>
+
+<footer class="text-muted py-5">
+    <div class="container">
+        <p class="float-end mb-1">
+            <a href="#">
+                back to top
+            </a>
+        </p>
+        <p class="mb-1">Copyright &copy; 2021 Moment. All rights reserved</p>
+        <p class="mb-0">What is Moment? <a href="#">Visit the homepage</a> or read our <a href="pages/about.html">getting started guide</a>.</p>
+    </div>
+</footer>
+
+</body>
+</html>
