@@ -3,13 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--添加标签页logo-->
+    <link rel="Shortcut Icon" href="../favicon.ico" />
     <!-- Bootstrap icon库-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
     <!-- Bootstrap css-->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
     <!-- 自定义 css-->
-    <link href="css/home.css" rel="stylesheet">
-    <title>Moment-即刻</title>
+    <link href="../css/home.css" rel="stylesheet">
+    <!--自定义js-->
+    <script src="../js/home.js"></script>
+    <!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.min.js"></script>
+    <!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
+    <script src="../js/bootstrap.min.js"></script>
+    <title>长文学</title>
 </head>
 <body>
 <!--导航栏-->
@@ -20,11 +28,11 @@
                 <svg t="1618889473028" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="19992" width="3rem"><path d="M102.4 238.92992v614.4L375.47008 921.6V307.2L102.4 238.92992zM426.67008 661.32992L648.52992 716.8 426.67008 384zM699.40224 729.52832L921.6 785.05984V285.1328zM674.89792 664.064L921.6 170.65984 648.52992 102.4 499.37408 400.73216z" p-id="19993" fill="#0D6EFD"></path></svg>
             </a>
             <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="#" class="nav-link px-2 link-secondary">Moment-即刻</a></li>
-                <li><a href="#" class="nav-link px-2 link-dark">推荐</a></li>
-                <li><a href="#" class="nav-link px-2 link-dark">短文学</a></li>
-                <li><a href="#" class="nav-link px-2 link-dark">长文学</a></li>
-                <li><a id="about" href="" class="nav-link px-2 link-dark">关于</a></li>
+                <li><a href="../index.html" class="nav-link px-2 link-dark">Moment-即刻</a></li>
+                <li><a href="essay.html" class="nav-link px-2 link-dark">推荐</a></li>
+                <li><a href="recommend.html" class="nav-link px-2 link-dark">短文学</a></li>
+                <li><a href="#" class="nav-link px-2 link-secondary">长文学</a></li>
+                <li><a href="about.html" class="nav-link px-2 link-dark">关于</a></li>
             </ul>
 
             <!--登录与注册-->
@@ -37,110 +45,6 @@
 </header>
 
 <main>
-    <!--首页图片轮播 -->
-    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-
-                <div class="container">
-                    <div class="carousel-caption text-start">
-                        <h1>Example headline.</h1>
-                        <p>Some representative placeholder content for the first slide of the carousel.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#">立即注册</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1>Another example headline.</h1>
-                        <p>Some representative placeholder content for the second slide of the carousel.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#">即刻推荐</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-
-                <div class="container">
-                    <div class="carousel-caption text-end">
-                        <h1>One more for good measure.</h1>
-                        <p>Some representative placeholder content for the third slide of this carousel.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#">了解更多</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-
-    <div class="container marketing">
-
-        <!-- 简介 -->
-        <div class="row">
-            <h1>What is Moment</h1>
-            <p class="fs-5 col-md-8">Moment 在英文中是瞬间的意思，但我更愿意称之为即刻，一瞬间有千万百万种可能，我们都曾有过停留在某一瞬间的想法，但时光总是匆匆而逝</p>
-            <p class="fs-6 col-md-8">但是文字可以停留，可以承载着你的，喜、怒、哀、乐、愁。在这里，用文字留下你即刻的情感，在别人的即刻中寻找共鸣。要期待，许多生命中还未发生的幸福，总有一天会与你不期而遇</p>
-            <h4>Moment-即刻，只为做极简文字共鸣</h4>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-            <div class="col-md-7">
-                <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-                <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
-            </div>
-            <div class="col-md-5">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
-            </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-            <div class="col-md-7 order-md-2">
-                <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-                <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
-            </div>
-            <div class="col-md-5 order-md-1">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
-            </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-            <div class="col-md-7">
-                <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-                <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
-            </div>
-            <div class="col-md-5">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
-            </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-    </div><!-- /.container -->
 
 </main>
 
@@ -152,15 +56,9 @@
             </a>
         </p>
         <p class="mb-1">Copyright &copy; 2021 Moment. All rights reserved</p>
-        <p class="mb-0">What is Moment? <a href="#">Visit the homepage</a> or read our <a href="pages/about.html">getting started guide</a>.</p>
+        <p class="mb-0">What is Moment? <a href="../index.html">Visit the homepage</a> or read our <a href="about.html">getting started guide</a>.</p>
     </div>
 </footer>
 
-<!--自定义js-->
-<script src="js/home.js"></script>
-<!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
-<script src="http://libs.baidu.com/jquery/1.9.0/jquery.min.js"></script>
-<!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
-<script src="js/bootstrap.min.js"></script>
 </body>
 </html>

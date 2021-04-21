@@ -18,14 +18,14 @@
     <script src="http://libs.baidu.com/jquery/1.9.0/jquery.min.js"></script>
     <!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
     <script src="../js/bootstrap.min.js"></script>
-    <title>Moment-登录</title>
+    <title>Moment-注册</title>
 </head>
 <body>
 
 <main class="form-signin">
     <form>
         <img class="mb-4 rounded mx-auto d-block" src="../favicon.ico" alt="" width="72" height="57">
-        <h1 class="h3 mb-3 fw-normal text-center">账号登录</h1>
+        <h1 class="h3 mb-3 fw-normal text-center">账号注册</h1>
 
         <div class="form-floating">
             <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
@@ -33,10 +33,15 @@
         </div>
         <div class="form-floating">
             <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-            <label for="floatingPassword">密码</label>
+            <label for="floatingPassword">输入密码</label>
         </div>
 
-        <button class="w-100 btn btn-lg btn-primary" type="submit">登录</button>
+        <div class="checkbox mb-3">
+            <label>
+                <input type="checkbox" value="remember-me"> 注册即代表同意用户协议
+            </label>
+        </div>
+        <button class="w-100 btn btn-lg btn-primary" type="submit">注册</button>
         <p class="mt-5 mb-3 text-muted">&copy; 2021</p>
     </form>
 </main>
